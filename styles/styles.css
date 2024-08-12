@@ -112,6 +112,12 @@
     columns: #fff;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
     .portfolio-title {
         display: none;
@@ -125,6 +131,32 @@
     width: 100%;
  }
 
+     .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .menu-items li {
+        margin: 15px 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
